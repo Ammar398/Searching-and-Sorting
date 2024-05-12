@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+void linearsearch(int arr[], int search, int size){
+    for(int i = 0; i<size; i++){
+        if(arr[i]== search){
+            cout<<"The number is found at the index"<< i;
+            return ;
+            
+           
+        }
+        
+    }
+    cout<<"The number is not found at any index";
+    
+    
+}
+
+int main() {
+    int n;
+    int arr[] = {34,67,89,69,23,90,190,678,23,9,12};
+    int s = sizeof(arr)/4;
+    cout<<"Enter the Number you want to find through linear search: "<<endl;
+    cin>> n;
+    
+   linearsearch(arr, n, s);
+       
+}
